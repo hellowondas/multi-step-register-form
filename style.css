@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@500&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+:root {
+  
+/* CSS HSL */
+--clr-black-1: hsla(222, 36%, 11%, 1);
+--clr-black-2: hsla(217, 24%, 17%, 1);
+--clr-neutral-1: hsla(0, 0%, 100%, 1);
+--clr-neutral-2: hsla(260, 68%, 54%, 1);
+--clr-neutral-3: hsla(217, 5%, 51%, 1);
+
+
+  --fs-1: 1.03125rem;
+  --fs-2: 1.134375rem;
+  --fs-3: 1.2478125rem;
+}
+
+
+body {
+  background-image: url('./resources/blur-radial.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 20px 50px;
+  background: var(--clr-black-1);
+  
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container {
+  display: flex;
+  width: 100%;
+  margin: 1rem;
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  background: var(--clr-black-2);
+  padding: 2rem 1rem;
+ 
+  max-width: 400px;
+  width: 100%;
+  border-radius: 10px;
+  
+  h1 {
+    color: var(--clr-neutral-1);
+    font-family: 'Manrope';
+    font-size: var(--fs-1);
+    margin-bottom: 1rem;
+  }
+}
