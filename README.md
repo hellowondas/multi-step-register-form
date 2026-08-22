@@ -96,3 +96,16 @@ We value feedback and are always looking to improve our challenges and platform.
 This challenge is completely free. Please share it with anyone who would find it useful for practice.
 
 **Enjoy building!** 🚀
+
+
+
+**Document of JavaScript**
+for the first card or step 1
+- select the name `input` by `id`
+- select the email `input` by `id`
+- select the first continue `button` by `class`
+
+
+
+- add an event listener in `continue button` to detect a click
+- inside this function, check:

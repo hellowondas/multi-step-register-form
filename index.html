@@ -13,7 +13,7 @@
 
     <title>Multi-step Register Form | devChallenges.io</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="esticides.css">
+    <link rel="stylesheet" href="esticide.css">
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -25,18 +25,21 @@
         <form class="contact-form">
           <label for="name">Name</label>
           <input 
-            type="text" 
+            type="text"
+            id="name"
             name="username" 
             placeholder="Enter your name"
             class="for-name"
+            required
           />
 
           <label for="email">Email</label>
           <input
-            type="text" 
-            name="email" 
+            type="email"
+            id="email"
+            name="user-email" 
             placeholder="Example@gmail.com"
-            required="erro"
+            required
           />
         </form>
 
@@ -60,31 +63,54 @@
 
         <h2>What topics are you interested in?</h2>
         <form class="checkbox-form">
-          <input 
+          <input
             type="checkbox" 
             name="topics" 
-            id="software development"
+            id="software-development"
           />
+          <label for="software-development">Software Development</label>
+
+          
+          <input
+            type="checkbox" 
+            name="topics" 
+            id="user-experience"
+          />
+          <label for="user-experience">User Experience</label>
+
 
           <input 
             type="checkbox" 
             name="topics" 
-            id="user experience"
+            id="graphic-design"
           />
+          <label for="graphic-design">Graphic Design</label>
 
-          <input 
-            type="checkbox" 
-            name="topics" 
-            id="software development"
-          />
         </form>
-        
+
         <div class="btn">
           <button>Continue</button>
+        </div>
+      </article>
+      
+      <article class="card step-3" hidden>
+        <h3>Summary</h3>
+
+        <div class="summary">
+          <p>Name:<span id="display-name"></span></p>
+          <p>Email:<span id="display-email"></span></p>
+          <p>Topics:</p>
+          <ul class="display-topics">
+            
+          </ul>
         </div>
       </article>
 
     </main>
 
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+<script>
+  eruda.init();
+</script>
 </html>
