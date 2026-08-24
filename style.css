@@ -140,7 +140,8 @@ input:user-invalid {
   outline: 2px solid var(--clr-neutral-1);
   outline-offset: -0.5px;
 }
-  
+
+
 .steps {
   display: flex;
   align-items: center;
@@ -153,8 +154,8 @@ input:user-invalid {
   .next-dots {
     display: flex;
     gap: 0.9rem;
-    
-    
+
+
     .dot {
       height: 8px;
       width: 8px;
@@ -163,7 +164,8 @@ input:user-invalid {
     }
 
     .active {
-      
+      background: var(--clr-neutral-2);
+      box-shadow: 0px 0px 10px 2px var(--clr-neutral-2);
     }
   }
 }
@@ -194,7 +196,6 @@ input[type="checkbox"] {
   input[type="checkbox"]:checked + label {
     background: var(--clr-neutral-2);
   }
-  
-  
+
   
 }

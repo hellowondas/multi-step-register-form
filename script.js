@@ -24,12 +24,12 @@ function toggleCards() {
 
   card1.hidden = true;
   card2.hidden = false;
+
+  /* select the .steps class & move the .active class from the first dot to the next */
+  document.querySelector('.steps p').textContent = 'Step 2 of 3';
+  document.querySelectorAll('.dot')[0].classList.remove('active');
+  document.querySelectorAll('.dot')[1].classList.add('active');
 }
 
 // Add event listener on the first button 
 firstBtn.addEventListener("click", handleContinue);
-
-
-document.querySelector(".steps p").textContent = "Steps 2 of 3";
-document.querySelectorAll(".dot")[0].classList.remove(".active");
-document.querySelectorAll(".dot")[0].classList.add(".active");
