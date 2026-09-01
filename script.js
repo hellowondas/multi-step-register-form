@@ -89,7 +89,11 @@ function handleStep2() {
   goToStep(3);
 }
 
-
+/* show alert for confirm button */
+document.querySelector('.step-3 .btn button').addEventListener('click', function(event) {
+  event.preventDefault();
+  alert("✅ Success");
+});
      /*==== EVENT LISTENERS ====*/
 
 // Add event listener on the first button
