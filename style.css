@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@500&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
   margin: 0;
@@ -39,6 +38,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  font-family: "Inter";
 }
 
 
@@ -57,7 +58,6 @@ body {
   background: var(--clr-black-2);
   padding: 2rem 1.3rem;
   border-radius: 0.625rem;
-  font-family: "Manrope", san-serif;
   color: var(--clr-neutral-1);
   box-shadow: 0px 0px 6px 0 var(--clr-black-2);
 
@@ -89,7 +89,7 @@ body {
     padding: 0.5rem;
     border: 1px solid var(--clr-neutral-3);
     background: transparent;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     color: var(--clr-neutral-1);
     padding: 0.9rem;
   }
@@ -126,7 +126,7 @@ input:user-invalid {
   margin-top: 2rem;
 
   button {
-    min-width: 100px;
+    min-width: 6.25rem;
     padding: 0.6rem 2rem;
     color: var(--clr-neutral-1);
     background: var(--clr-neutral-2);
@@ -150,7 +150,6 @@ input:user-invalid {
   margin-top: 1.3rem;
   color: var(--clr-neutral-1);
   font-size: 0.8rem;
-  font-family: "Open-sans";
 
   .next-dots {
     display: flex;
@@ -188,7 +187,7 @@ input[type="checkbox"] {
   label {
     background: var(--clr-neutral-3);
     padding: 0.7rem 1rem;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     border: none;
     color: var(--clr-neutral-1);
     cursor: pointer;
@@ -207,7 +206,7 @@ input[type="checkbox"] {
   > :nth-child(3) {
     margin-top: 1.2rem;
   }
-  
+
   .info,
   .display-topics {
     margin-left: 0.4rem;
@@ -225,6 +224,54 @@ input[type="checkbox"] {
 
 .step-3 {
   max-width: 31.25rem;
-  width: calc(100vw - 2rem);  /* Full viewport minus margins */
+  width: calc(100vw - 2rem);
   padding: 2rem 1.8rem;
+}
+
+
+@media (min-width: 768px) {
+.card {
+  width: 32.5rem;
+  max-width: 90vw;
+  border-radius: 0.9rem;
+
+  h1, h2, h3 {
+    font-size: var(--fs-4);
+  }
+
+  label {
+    font-size: var(--fs-1);
+  }
+
+  ::placeholder {
+    font-size: 1rem;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    border-radius: 0.625rem;
+  }
+
+
+.steps {
+  font-size: 1rem;
+}
+
+
+.checkbox-form {
+  font-size: var(--fs-1);
+}
+
+
+.info,
+.display-topics {
+  margin-left: 0.4rem;
+  color: var(--clr-neutral-1);
+  font-weight: 600;
+  font-size: 1rem;
+ }
+ 
+}
+
+
 }
