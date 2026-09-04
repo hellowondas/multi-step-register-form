@@ -7,7 +7,7 @@ A modern, responsive multi-step registration form built with HTML, CSS, and Java
 ## Features
 
 - Three-step card registration process:
-  1. User details (name, email)
+  1. User details (form)
   2. Topic selection (checkboxes)
   3. Summary and confirmation
 
@@ -24,10 +24,10 @@ A modern, responsive multi-step registration form built with HTML, CSS, and Java
 - **Focus Visible**: I learnt how to use focus visible for keyboard accessibility
 - **Reponsive Design**: it was used to make the card responsive in desktop and tablets layouts.
 - **JavaScript**: Created functions to handle form flow:
-  - `goToStep()`: Hides all cards and displays the active step
-  - `handleStep1()`: Validates name and email input, moves to step 2
-  - `handleStep2()`: Validates checkbox selection, collects topics, moves to step 3
-  - `displaySummary()`: Populates and displays user data on the summary card
+  - **`goToStep()`**: Hides all cards and displays the active step
+  - **`handleStep1()`**: Validates name and email input, moves to step 2
+  - **`handleStep2()`**: Validates checkbox selection, collects topics, moves to step 3
+  - **`displaySummary()`**: Populates and displays user data on the summary card
   - Event listeners on buttons to trigger step transitions
 
 
